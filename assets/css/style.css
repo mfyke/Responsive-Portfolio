@@ -6,6 +6,8 @@
 	height: 100px;
 	border-bottom: 2px solid #cccccc;
 	z-index: 10;
+	margin-left: auto;
+	margin-right: auto;
 }
 .navBar h1 {
 	padding: 15px;
@@ -25,7 +27,6 @@
 }
 .navBar ul {
 	position:relative;
-	right:0px;
 	float: right;
 	margin-top: 50px;
 	margin-right: 35px;
@@ -58,7 +59,6 @@
 #prof {
 	float:left;
 	width: 150px;
-	height: 150px;
 	padding-right: 20px;
 }
 .connect {
@@ -66,7 +66,6 @@
 	border: 1px solid #cccccc;
 	width: 248px;
 	padding: 10px;
-	position:relative;
 	float: right;
 	margin-top: 120px;
 }
@@ -93,6 +92,11 @@
 	margin-right:auto;
 }
 .page {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.copypasta {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
@@ -127,23 +131,21 @@ body {
 	margin-bottom: 10px;
 }
 .picLeft {
-	height: 200px;
 	width: 250px;
 	float:left;
 	position:relative;
+	margin-bottom: 10px;
 }
 .picLeft img {
-	height: 200px;
 	width: 250px;
 }
 .picRight {
-	height: 200px;
 	width:  250px;
 	float:right;
 	position:relative;
+	margin-bottom: 10px;
 }
 .picRight img {
-	height: 200px;
 	width: 250px;
 }
 .textLeft {
@@ -167,4 +169,170 @@ body {
 	z-index: 1;
 	position: relative;
 	text-align:center;
+}
+form {
+		width:100%;
+	}
+input {
+		width:100%;
+	}
+textarea {
+		width:100%;
+	}
+@media screen and (max-width: 980px) {
+	.page {
+		width: 100%;
+	}
+	.picLeft {
+		width: 100%;
+		float: none;
+		text-decoration: none;
+	}
+	.picRight {
+		width: 100%;
+		text-decoration: none;
+	}
+	.picLeft img {
+		width: 100%;
+	}
+	.picRight img {
+		width: 100%;
+	}
+	.textLeft {
+		width: 100%;
+		float: none;
+		height: 20px;
+	}
+	.textRight {
+		width: 100%;
+	}
+	#lastPic {
+		display:none;
+	}
+}
+@media screen and (max-width: 768px) {
+	.copypasta {
+		width: 95%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.content {
+		width: 90%;
+		margin-bottom:0px;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		overflow: auto;
+	}
+	.connect {
+		width: 95%;
+		margin-bottom: 150px;
+		margin-top:20px;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		overflow: auto;
+	}
+	form {
+		width:100%;
+	}
+	input {
+		width:100%;
+	}
+	textarea {
+		width:100%;
+	}
+	.connect h2 {
+		text-align: left;
+		margin-left: 3%;
+		width: 95%;
+	}
+	.connect ul {
+		margin-left: 2%;
+		margin-top: 5px;
+		float:left;
+	}
+	.picLeft {
+		width: 47%;
+		text-decoration: none;
+		float:left;
+	}
+	.picRight {
+		width: 47%;
+		text-decoration: none;
+	}
+	.picLeft img{
+		width: 100%;
+	}
+	.picRight img {
+		width:100%;
+	}
+	.textLeft {
+		width: 100%;
+	}
+	.textRight {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.picLeft {
+		width: 100%;
+		float: none;
+		text-decoration: none;
+	}
+	.picRight {
+		width: 100%;
+		text-decoration: none;
+	}
+	.picLeft img {
+		width: 100%;
+	}
+	.picRight img {
+		width: 100%;
+	}
+	.textLeft {
+		width: 100%;
+		float: none;
+		height: 20px;
+	}
+	.textRight {
+		width: 100%;
+	}
+	#lastPic {
+		display:none;
+	}
+	#prof {
+		width: 100%;
+	}
+	.navBar {
+		left: 0;
+		height: 100px;
+	}
+	.page {
+		height: 100px;
+	}
+	.page ul {
+		float: none;
+		top: 30px;
+		width: 100%;
+		padding: 0px;
+		text-align:center;
+	}
+	.page li a {
+		font-size: 1em;
+		text-align: center;
+		width: 33.3%;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.page h1 {
+		width: 100%;
+		position: fixed;
+		margin-left: 0px;
+		top: 0px;
+		left: 0px;
+		height: 40px;
+		padding: 10px 0px 5px 0px;
+		margin-top: 0px;
+	}
 }
